@@ -1,0 +1,159 @@
+.project-details-body {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 80vw;
+    height: 80vh;
+    margin: 30px 60px;
+    padding: 30px 60px;
+    display: none;
+    overflow: auto;
+    box-shadow: 0 0 15px 100px rgba(0, 0, 0, 0.276);
+    border: 15px solid lightgoldenrodyellow;
+}
+
+.project-details-body button {
+    color: red;
+    border: 1px solid red;
+    padding: 3px 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.project-details-body button:hover {
+    color: white;
+    background-color: red;
+}
+
+.project-details-body h1 {
+    margin-bottom: 50px;
+}
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.project-details-body p {
+    display: inline-block;
+    width: auto;
+}
+
+.project-image {
+    display: inline-block;
+    height: 240px;
+    max-height: fit-content;
+    width: 350px;
+}
+
+.project-image img {
+    object-fit: cover;
+    height: inherit;
+    width: inherit;
+}
+.project-details-body img {
+    width: 100%;
+    height: fit-content;
+    object-fit: contain;
+}
+
+
+.project-details-body .project-image {
+    width: 500px;
+    height: fit-content;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.card {
+    height: fit-content;
+    min-height: 300px;
+    width: 300px;
+    box-shadow: 0 0 30px rgba(5, 13, 24, 0.251);
+    padding: 20px;
+}
+
+.contact .card {
+    border-radius: 5px;
+    margin-right: 50px;
+    margin-top: 100px;
+}
+
+.flexed {
+    display: flex;
+    min-height: 500px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.project-card {
+    height: fit-content;
+    width: 350px;
+    box-shadow: 0 0 30px rgba(5, 13, 24, 0.251);
+    cursor: pointer;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+}
+
+.project-name {
+    margin: 15px 20px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.project-about {
+    margin: 10px 20px;
+}
+
+.btn-list {
+    margin: 50px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container-projects {
+    justify-content: flex-start;
+}
+
+@media screen and (max-width:1200px) {
+    .project-details-body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .container-projects {
+        padding: 0;
+    }
+}
+
+/* .btn-list a {
+    color: rgb(0, 208, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    border: 5px solid rgb(0, 208, 255) ;
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+} */
+
+/* .btn-list a:hover {
+    color: white;
+    background-color: blue;
+    border: 5px solid blue;
+} */

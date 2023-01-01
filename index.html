@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-details-style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <script src="app.js" defer></script>
+    <title>Personal Website</title>
+</head>
+<body>
+    <div class="side-pane-toggle" id="side-pane-toggle">
+        <i class="bx bx-menu" id="toggle-icon"></i>
+        <!-- <img src="./assets/menu.png" class="icon-sm" alt="toggle" id="toggle-icon"> -->
+    </div>
+    <div class="side-pane" id="side-pane">
+        <div class="side-pane-content">
+            <div class="profile">
+                <div class="avatar">
+                    <img src="./assets/om.png" alt="avatar">
+                </div>
+                <div class="profile-name">Om Dubey</div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100028649408668" target="_blank" class="inline-links"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/om-dubey-975a32210/" target="_blank" class="inline-links"><i class="bx bxl-linkedin"></i></a>      
+                    <a href="https://www.instagram.com/omdubey1241/" target="_blank" class="inline-links"><i class="bx bxl-instagram"></i></a>
+                            
+                </div>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li class="nav-item">
+                        <a href="#home" onclick="togglePane()">
+                            <i class="bx bx-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" onclick="togglePane()">
+                            <i class="bx bx-user"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" onclick="togglePane()">
+                            <i class="bx bx-file-blank"></i>
+                            <span>Resume</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" onclick="togglePane()">
+                            <i class="bx bx-layer"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" onclick="togglePane()">
+                            <i class="bx bx-envelope"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="home" id="home"><p>
+            <div class="center">
+                <div class="greet">Hello, my name is</div>
+                <div class="name">Om Dubey</div>
+                <div class="typing">I'am a Web Developer</div>
+            </div>
+        </div>
+        <div class="about" id="about">
+            <h1>About</h1>
+            <div class="hr"></div>
+            <div class="container">
+                <img src="./assets/om.png" alt="profile pic" id="about-img">
+                <div class="about-me">
+                    <p>
+                        I am currently in 3<sup>rd</sup> year persuing B.Tech from IIT(ISM) Dhanbad. 
+                        I am a full-stack Web Developer. I have a strong understanding of JavaScript. 
+                        I can design an interactive and responsive front-end alongwith a full optimized Node backend server. 
+                        I can work with frameworks like React to create single-page applications.
+                        I also have experiance creating server-less websites using tools like firebase.
+                    </p>
+                    <p>
+                        I also have experiance in software development using C/C++. 
+                        I am a good problem solver and profecient in DSA.
+                    </p>
+                    <p>
+                        I am looking out for internship opportunities in the field of Software Development.
+                        Checkout my Resume and drop me an email if you want to have me working in your organization.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="resume" id="resume">
+            <h1>Resume</h1>
+            <div class="hr"></div>
+            <div class="container resume-flex-container">
+                <div class="resume-download">
+                    <div class="flex-block">Click the button below to download the detailed resume.</div>
+                    <a href="./assets/resume.pdf" target="_blank" class="link-btn">View</a>
+                    <a href="./assets/resume.pdf" download="Resume-OM" class="link-btn">Download</a>
+                    <!-- <div class="resume-frame">
+                        <iframe src="./assets/resume.pdf#toolbar=0" title="resume" frameborder="0" height="100%" width="100%"></iframe>
+                    </div> -->
+                </div>
+                <div class="skills">
+                    <div class="sm-heading">Skills</div>
+                    <div class="skillset">
+                        <div class="skill">
+                            <div class="skill-name">HTML</div>
+                            <div class="skill-level">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">CSS</div>
+                            <div class="skill-level">⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">JavaScript</div>
+                            <div class="skill-level">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">NodeJS (backend)</div>
+                            <div class="skill-level">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">Firebase</div>
+                            <div class="skill-level">⭐⭐⭐</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">MongoDB (database)</div>
+                            <div class="skill-level">⭐⭐⭐</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">C</div>
+                            <div class="skill-level">⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-name">C++</div>
+                            <div class="skill-level">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="projects" id="projects">
+            <h1>Projects</h1>
+            <div class="hr"></div>
+            <div class="container container-projects" id="project-list"></div>
+        </div>
+        <div class="contact" id="contact">
+            <h1>Contact Me</h1>
+            <div class="hr"></div>
+            <div class="flexed">
+                <div class="card">
+                    <h2>Email:</h2>
+                    <h5>20je0649@pe.iitism.ac.in</h5>
+                    <h2>Location:</h2>
+                    <h5>B-313, Amber Hostel, IIT(ISM) Dhanbad, Jharkhand</h5>
+                    <h2>Mobile:</h2>
+                    <h5>+91-7983253645</h5>
+                </div>
+                <div class="card">
+                    <h2>Social Media Handles</h2>
+                    <ul>
+                        <li><a href="https://www.facebook.com/profile.php?id=100028649408668" target="_blank">facebook</a></li>
+                        <li><a href="https://www.linkedin.com/in/om-dubey-975a32210/" target="_blank">linkedin</a></li>
+                        <li><a href="https://www.instagram.com/omdubey1241/" target="_blank">instagram</a></li>
+                        <li><a href="https://join.slack.com/t/pe-eg05990/shared_invite/zt-1mfx72mnp-~AoBuLY~w~YjWbjSQHRsHQ" target="_blank">slack</a></li>
+                        <li><a href="https://www.discord.com/" target="_blank">discord</a></li>
+                    </ul>
+                    <h2>Programming Handles</h2>
+                    <ul>
+                        <li><a href="https://github.com/om205" target="_blank">github</a></li>
+                        <li><a href="https://codeforces.com/profile/om382" target="_blank">codeforces</a></li>
+                        <li><a href="https://www.codechef.com/users/om382" target="_blank">codechef</a></li>
+                        <li><a href="https://leetcode.com/om382/" target="_blank">leetcode</a></li>
+                        <li><a href="https://auth.geeksforgeeks.org/user/om030402/" target="_blank">geeksforgeeks</a></li>
+                        <li><a href="https://www.hackerrank.com/" target="_blank">hackerrank</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="project-details-body" id="project-description">
+            <button id="model-close" onclick="closeModel()">X</button>
+            <h1 id="model-name">Project</h1>
+            <div class="description">
+                <div class="project-image">
+                    <img src="https://drive.google.com/uc?export=view&id=16ozlj92j5E6FdXXmUJIeH2zaBjhfOzQq" alt="project-image" id="model-image">
+                </div>
+                <div class="card" id="model-description">
+                    A responsive personal portfolio website created using only HTML, CSS and JavaScript.
+                    Well this is only the first version of website. It will be made better in future versions when it will be integrated with node.
+                    The design of this project was inspired from iportfolio template of bootstrap but this website is made from scratch without using any frameworks or libraries.
+                </div>
+            </div>
+            <div class="btn-list">
+                <a href="#" id="model-code-btn" target="_blank" class="link-btn">View Code</a>
+                <a href="#" id="model-live-btn" target="_blank" class="link-btn">View Live</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
