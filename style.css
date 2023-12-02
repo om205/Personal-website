@@ -93,7 +93,6 @@ body {
 #typing-container {
     border-right: 2px solid #fff;
     display: inline-block;
-    font-size: 32px;
     animation: blink-caret 0.5s step-end infinite;
 }
 
@@ -327,15 +326,14 @@ body {
     #resume-frame {
         height: 60vh;
     }
+    .page {
+        max-width: 100vw;
+    }
+    .typing {
+        font-size: 18px;
+    }
     body {
         grid-template-columns: 1fr;
-
-    }
-    .project-card {
-        width: 80%;
-    }
-    .project-image {
-        width:80%;
     }
 }
 
